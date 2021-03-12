@@ -2,7 +2,9 @@
 const express = require("express");
 const server = express();
 server.use(express.json());
-const PORT = 3000;
+
+// process.env.PORT
+const PORT = process.env.PORT || 3000;
 
 //npm cors
 const cors = require("cors");
