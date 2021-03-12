@@ -24,6 +24,7 @@ server.use(express.static("public"));
 
 // GET / => array of students of ./db./index.js
 server.get("/", function (req, res) {
+  console.log(students);
   res.send(students);
 });
 // server.get("/", function (req, res) {
